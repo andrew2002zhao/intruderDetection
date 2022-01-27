@@ -18,7 +18,7 @@ def convert_coords(textArray, w, l):
     end_point = (round((float(textArray[1]) + float(textArray[3])) * w), round((float(textArray[2]) + float(textArray[4]))* l))
     return start_point, end_point
 def draw_rectangle(start_point, end_point):
-    testImage = os.path.join(path, "test/images/image22.png").replace("/", "\\")
+    testImage = os.path.join(path, "test/images/image10.png").replace("/", "\\")
     print(testImage)
     # Reading an image in default mode
     image = cv2.imread(testImage)
@@ -42,7 +42,7 @@ def draw_rectangle(start_point, end_point):
 directory = os.path.dirname(__file__)
 path = os.path.join(directory, "testImages/Stanford Drone/finishedProduct")
 
-testLabels = os.path.join(path, "test/labels/image22.txt").replace("/", "\\")
+testLabels = os.path.join(path, "test/labels/image10.txt").replace("/", "\\")
 
 open_file(testLabels)
 

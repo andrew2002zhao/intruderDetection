@@ -60,8 +60,8 @@ for filename in os.listdir(imageDirectory):
                         # convert to yolo format before appending
 
                         # hardcoded too lazy to find dimensions so opened image since each image is constant
-                        w = 1400
-                        h = 1904
+                        w = 1417
+                        h = 2019
                         b = [float(ar[1]), float(ar[3]), float(ar[2]), float(ar[4])]
                         bb = convert(labelNo, [w, h], b)
                         labelNo = labelNo + 1
