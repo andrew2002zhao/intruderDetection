@@ -55,7 +55,7 @@ for filename in os.listdir(imageDirectory):
                     stripped_line = line.strip()
                     ar = stripped_line.split()
 
-                    if (ar[5] == frame and ar[6] != "1" and ar[7] != "1"):
+                    if (ar[5] == frame and ar[6] != "1" and ar[7] != "1" and ar[9] == "\"Pedestrian\""):
 
                         # convert to yolo format before appending
 
